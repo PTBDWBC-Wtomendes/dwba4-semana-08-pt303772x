@@ -4,43 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Curso - Letras</title>
-  <style>
-    .tabs {
-      text-align: right;
-      margin-bottom: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="../assets/site.css">
 </head>
 <body>
-  <nav class="tabs">
-    <a href="../index.html">HOME</a> |
-    <a href="../eventos.html">EVENTOS</a> |
-    <a href="../contato.html">CONTATO</a> |
-    <a href="../sobre.html">SOBRE</a>
-    <a href="../entrar.html">ENTRAR </a>
-  </nav>
-
-   <div>
-  <img src="../assets/Logo.jpg" alt="Logo IFSP" width="250">
+  <header class="site-header" id="topo">
+    <div class="topbar">
+      <nav class="nav-links" aria-label="Navegação principal">
+        <a href="../index.html">HOME</a>
+        <a href="../eventos.html">EVENTOS</a>
+        <a href="../contato.html">CONTATO</a>
+        <details class="menu-dropdown">
+          <summary>CURSOS</summary>
+          <div class="menu-dropdown-panel">
+            <a href="curso-ads.html">Análise e Desenvolvimento de Sistemas</a>
+            <a href="curso-engenharia-producao.html">Engenharia de Produção</a>
+            <a href="curso-gestao-ti.html">Gestão em Tecnologia da Informação</a>
+            <a href="curso-letras.html">Letras</a>
+            <a href="curso-gestao-publica.html">Gestão Pública</a>
+          </div>
+        </details>
+        <a href="../entrar.html">ENTRAR</a>
+      </nav>
+      <nav class="nav-links" aria-label="Links institucionais">
+        <a href="../sobre.html">SOBRE</a>
+      </nav>
     </div>
 
-  <h1>Letras</h1>
-  <h4>Objetivo do Curso:</h4>
-  <p>
-  O Curso Superior de Licenciatura em Letras do câmpus São Paulo Pirituba tem como objetivo formar professores/as de Língua Portuguesa,
-   Língua Inglesa e suas respectivas Literaturas, capazes de atuar com competência linguística e domínio das formas de cultura desenvolvidas a partir das línguas contempladas.
-O Curso, assim compreendido, objetiva formar o egresso/a para atuar na Educação Básica e Tecnológica de forma crítica, reflexiva e consciente da sua atuação educacional, política e social.
-  </p>
-  
+    <div class="banner">
+      <img src="../assets/Logo.jpg" alt="Instituto Federal São Paulo" width="430">
+    </div>
+  </header>
+
+  <main class="page-content">
+    <h1>Letras</h1>
+    <h4>Objetivo do Curso:</h4>
+    <p>
+      O Curso Superior de Licenciatura em Letras do câmpus São Paulo Pirituba tem como objetivo formar professores/as de Língua Portuguesa,
+      Língua Inglesa e suas respectivas Literaturas, capazes de atuar com competência linguística e domínio das formas de cultura desenvolvidas a partir das línguas contempladas.
+      O Curso, assim compreendido, objetiva formar o egresso/a para atuar na Educação Básica e Tecnológica de forma crítica, reflexiva e consciente da sua atuação educacional, política e social.
+    </p>
+
     <div style="margin-top: 60px;">
       <a href="https://www.facebook.com/ifspoficial" target="_blank">
         <img src="../assets/facebook.png" alt="Facebook IFSP" width="40">
       </a>
     </div>
 
-    <footer>
+    <footer class="page-footer">
       IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100
     </footer>
+  </main>
 </body>
 </html>
-

@@ -5,83 +5,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DWBA4 Semana 05 - PT303772X</title>
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-  <style>
-    .tabs {
-      text-align: right;
-      margin-bottom: 20px;
-    }
-
-     .social {
-      margin-top: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-  <div id="topo">
-    <nav class="tabs">
-      <a href="index.html">HOME</a> |
-      <a href="eventos.html">EVENTOS</a> |
-      <a href="contato.html">CONTATO</a> |
-      <a href="sobre.html">SOBRE</a>|
-      <a href="entrar.html">ENTRAR </a>
-    </nav>
-
-    <div>
-      <img src="assets/Logo.jpg" alt="Logo IFSP" width="480">
+  <header class="site-header" id="topo">
+    <div class="topbar">
+      <nav class="nav-links" aria-label="Navegação principal">
+        <a href="index.html">HOME</a>
+        <a href="eventos.html">EVENTOS</a>
+        <a href="contato.html">CONTATO</a>
+        <details class="menu-dropdown">
+          <summary>CURSOS</summary>
+          <div class="menu-dropdown-panel">
+            <a href="cursos/curso-ads.html">Análise e Desenvolvimento de Sistemas</a>
+            <a href="cursos/curso-engenharia-producao.html">Engenharia de Produção</a>
+            <a href="cursos/curso-gestao-ti.html">Gestão em Tecnologia da Informação</a>
+            <a href="cursos/curso-letras.html">Letras</a>
+            <a href="cursos/curso-gestao-publica.html">Gestão Pública</a>
+          </div>
+        </details>
+        <a href="entrar.html">ENTRAR</a>
+      </nav>
+      <nav class="nav-links" aria-label="Links institucionais">
+        <a href="sobre.html">SOBRE</a>
+      </nav>
     </div>
 
-    <h2>Cursos</h2>
-    <ul>
-      <li><a href="cursos/curso-ads.html">Análise e Desenvolvimento de Sistemas</a></li>
-      <li><a href="cursos/curso-engenharia-producao.html">Engenharia de Produção</a></li>
-      <li><a href="cursos/curso-gestao-ti.html">Gestão em Tecnologia da Informação</a></li>
-      <li><a href="cursos/curso-letras.html">Letras</a></li>
-      <li><a href="cursos/curso-gestao-publica.html">Gestão Pública</a></li>
-    </ul>
-
-    <div>
-      <strong>Eventos</strong>
+    <div class="banner">
+      <img src="assets/Logo.jpg" alt="Instituto Federal São Paulo" width="430">
     </div>
+  </header>
 
-    <div>
-      <img src="assets/SEJA_RARO.jpg" alt="Palestra Seja Raro" width="1000">
-    </div>
-    <h2>Aniversário do IFSP - Pirituba - Palestra Augusto Aielo</h2>
+  <main class="page-content">
+    <section class="home-feature">
+      <h2 class="home-title">Acontece no IFSP!</h2>
 
-    <h1>Sobre a Biblioteca</h1>
-    <div>
-      <img src="assets/library.jpeg" alt="Biblioteca" width="110">
-    </div>
+      <div class="home-event-image">
+        <img src="assets/SEJA_RARO.jpg" alt="Palestra Seja Raro" width="1000">
+      </div>
 
-    <h1>Conheça os novos títulos disponíveis na nossa biblioteca</h1>
-    <p><small><strong>Publicado: Domingo, 21 de março de 20126</strong></small></p>
+      <h2 class="home-event-caption">Aniversário do IFSP - Pirituba - Palestra Augusto Aielo</h2>
+    </section>
 
-    <h1>Conheça o SUAP</h1>
-    <div>
-      <iframe
-        src="https://www.youtube.com/embed/yVbOcB1ryh0"
-        width="560"
-        height="315"
-        title="Tutorial de Acesso - SUAP 1"
-        allowfullscreen>
-      </iframe>
-    </div>
+    <section class="home-library">
+      <h1>Sobre a Biblioteca</h1>
+      <div>
+        <img src="assets/library.jpeg" alt="Biblioteca" width="110">
+      </div>
 
-       <div class="social">
+      <h1>Conheça os novos títulos disponíveis na nossa biblioteca</h1>
+      <p><small><strong>Publicado: Domingo, 21 de março de 20126</strong></small></p>
+    </section>
+
+    <section class="home-suap">
+      <h1>Conheça o SUAP</h1>
+      <div>
+        <iframe
+          src="https://www.youtube.com/embed/yVbOcB1ryh0"
+          width="560"
+          height="315"
+          title="Tutorial de Acesso - SUAP 1"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <div class="social">
       <a href="#topo">
         <img src="assets/MoveTop.png" alt="Voltar ao topo" width="40">
       </a>
     </div>
-  
-      <div class="social">
-        <a href="https://www.facebook.com/ifspoficial" target="_blank">
+
+    <div class="social">
+      <a href="https://www.facebook.com/ifspoficial" target="_blank">
         <img src="assets/facebook.png" alt="Facebook IFSP" width="40">
       </a>
-      </div>
+    </div>
 
     <footer class="social">
       IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100
     </footer>
-  </div>
+  </main>
 </body>
 </html>

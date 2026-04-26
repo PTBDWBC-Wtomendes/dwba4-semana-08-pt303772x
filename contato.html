@@ -5,67 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contato</title>
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-
-  <style>
-    .tabs {
-      text-align: right;
-      margin-bottom: 20px;
-    }
-
-    .social {
-      margin-top: 20px;
-    }
-
-    ul {
-      list-style: disc;
-      padding-left: 28px;
-    }
-
-    li {
-      margin-bottom: 8px;
-    }
-
-    fieldset {
-      margin-top: 6px;
-    }
-  </style>
+  <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-
-  <div id="topo">
-    <nav class="tabs">
-      <a href="index.html">HOME</a> |
-      <a href="eventos.html">EVENTOS</a> |
-      <a href="contato.html">CONTATO</a> |
-      <a href="sobre.html">SOBRE</a>|
-      <a href="entrar.html">ENTRAR </a>
-    </nav>
-
-    <div>
-      <img src="assets/Logo.jpg" alt="Logo IFSP" width="480">
+  <header class="site-header" id="topo">
+    <div class="topbar">
+      <nav class="nav-links" aria-label="Navegação principal">
+        <a href="index.html">HOME</a>
+        <a href="eventos.html">EVENTOS</a>
+        <a href="contato.html">CONTATO</a>
+        <details class="menu-dropdown">
+          <summary>CURSOS</summary>
+          <div class="menu-dropdown-panel">
+            <a href="cursos/curso-ads.html">Análise e Desenvolvimento de Sistemas</a>
+            <a href="cursos/curso-engenharia-producao.html">Engenharia de Produção</a>
+            <a href="cursos/curso-gestao-ti.html">Gestão em Tecnologia da Informação</a>
+            <a href="cursos/curso-letras.html">Letras</a>
+            <a href="cursos/curso-gestao-publica.html">Gestão Pública</a>
+          </div>
+        </details>
+        <a href="entrar.html">ENTRAR</a>
+      </nav>
+      <nav class="nav-links" aria-label="Links institucionais">
+        <a href="sobre.html">SOBRE</a>
+      </nav>
     </div>
 
+    <div class="banner">
+      <img src="assets/Logo.jpg" alt="Instituto Federal São Paulo" width="430">
+    </div>
+  </header>
+
+  <main class="page-content">
     <h1>Mande uma mensagem</h1>
 
-    <form action="#" method="post">
-      <ul>
-        <li>
+    <form class="contact-form" action="#" method="post">
+      <ul class="contact-list">
+        <li class="contact-item">
           <label for="nome">Nome</label>
           <input type="text" id="nome" name="nome" required>
         </li>
 
-        <li>
+        <li class="contact-item">
           <label for="email">E-Mail</label>
           <input type="email" id="email" name="email" required>
         </li>
 
-        <li>
+        <li class="contact-item">
           <label for="telefone">Telefone</label>
           <input type="tel" id="telefone" name="telefone" required>
-          (99) 99999-9999
+          <span class="field-hint">(99) 99999-9999</span>
         </li>
 
-        <li>
+        <li class="contact-item">
           <label for="assunto">Assunto</label>
           <select id="assunto" name="assunto" required>
             <option value="" selected disabled>-- Selecione --</option>
@@ -75,22 +67,20 @@
           </select>
         </li>
 
-        <li>
+        <li class="contact-item">
           <label for="mensagem">Mensagem</label>
           <textarea id="mensagem" name="mensagem" rows="3" cols="40" required></textarea>
         </li>
 
-        <li>
-          <fieldset>
+        <li class="contact-item">
+          <fieldset class="contact-response">
             <legend>Opções de Resposta</legend>
-            <label for="resposta-email">E-Mail</label>
-            <input type="checkbox" id="resposta-email" name="resposta" value="email">
-            <label for="resposta-telefone">Telefone</label>
-            <input type="checkbox" id="resposta-telefone" name="resposta" value="telefone">
+            <label for="resposta-email"><input type="checkbox" id="resposta-email" name="resposta" value="email"> E-Mail</label>
+            <label for="resposta-telefone"><input type="checkbox" id="resposta-telefone" name="resposta" value="telefone"> Telefone</label>
           </fieldset>
         </li>
 
-        <li>
+        <li class="contact-actions">
           <button type="submit">Enviar</button>
         </li>
       </ul>
@@ -111,7 +101,7 @@
     <footer class="social">
       IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100
     </footer>
-  </div>
+  </main>
 
 </body>
 </html>
